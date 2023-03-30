@@ -10,4 +10,17 @@ function numberGenerator(min,max){
     return Math.floor(Math.random() * (max - min)+ min);
 }
 
-console.log(diceRoll6());
+function diceRoll6Display(){
+    //console.log(diceRoll6());
+    document.getElementById("roll").innerHTML = diceRoll6();
+}
+function diceRoll10Display(){
+    //console.log(diceRoll10());
+    document.getElementById("roll2").innerHTML = diceRoll10();
+}
+
+/*
+for (let i = 0; i < 5; i++){
+diceRoll10Display();
+diceRoll6Display();
+}*/
